@@ -70,7 +70,7 @@
             <p class="precio-original">Precio original: $89.99</p>
             <p class="precio-oferta">Precio oferta: $59.99</p>
             <p class="tiempo-restante">
-              Tiempo restante: <span id="countdown">12:00:00</span>
+              Tiempo restante: <span >12:00:00</span>
             </p>
             <button>Aprovechar Oferta</button>
           </div>
@@ -89,28 +89,7 @@ import HeaderProyecto from "@/components/HeaderProyecto.vue";
 
 export default {
   name: "ProyectoView",
-  mounted() {
-    // Manejo del contador de ofertas
-    const countdownElement = document.getElementById("countdown");
-    if (countdownElement) {
-      let time = 12 * 60 * 60; // 12 horas en segundos
-      function updateCountdown() {
-        const hours = Math.floor(time / 3600);
-        const minutes = Math.floor((time % 3600) / 60);
-        const seconds = time % 60;
-        countdownElement.textContent = `${hours
-          .toString()
-          .padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds
-          .toString()
-          .padStart(2, "0")}`;
-        if (time > 0) {
-          time--;
-          setTimeout(updateCountdown, 1000);
-        }
-      }
-      updateCountdown();
-    }
-  },
+ 
   components: {
     HeaderProyecto,
     FooterProyecto,
