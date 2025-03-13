@@ -15,6 +15,11 @@ const routes = [
     component: AboutUS
   },
   {
+    path: '/Pokemones',
+    name: 'Pokemones',
+    component: PokemonesView
+  },
+  {
     path: '/proyecto',
     name: 'proyecto',
     component: ProyectoView
