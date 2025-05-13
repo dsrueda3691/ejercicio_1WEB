@@ -2,12 +2,19 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutUS from '../views/AboutUs.vue'
 import ProyectoView from '@/views/ProyectoView.vue'
+import PokemonesView from '@/views/PokemonesView.vue';
+import CrudView from '@/views/CrudView.vue';
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/crud',
+    name: 'crud',
+    component: CrudView
   },
   {
     path: '/sobre-nosotros',

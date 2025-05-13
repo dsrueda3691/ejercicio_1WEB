@@ -7,6 +7,9 @@
     <p>
       <router-link to="/proyecto">Ir a la página Del Proyecto</router-link>
     </p>
+    <p>
+      <router-link to="/crud">Ir a la página Del CRUD</router-link>
+    </p>
   </div>
 </template>
 
